@@ -1,0 +1,6 @@
+.list-group-item.active {
+    background-color:greenyellow; /* Seçili kategori rengi olarak yeşil kullanabilirsiniz */
+     border-color:yellowgreen;
+    
+  }
+ 
