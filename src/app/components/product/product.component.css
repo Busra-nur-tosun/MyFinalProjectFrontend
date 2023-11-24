@@ -1,0 +1,13 @@
+.alert{
+      background-color:rgba(172, 255, 47, 0.4); /* Seçili kategori rengi olarak yeşil kullanabilirsiniz */
+    border-color:yellowgreen;
+}
+#filterText{
+    border-color:yellowgreen;
+    
+}
+.btn{
+    background-color:rgba(172, 255, 47, 0.723); /* Seçili kategori rengi olarak yeşil kullanabilirsiniz */
+    border-color:yellowgreen;
+    width:fit-content;
+}

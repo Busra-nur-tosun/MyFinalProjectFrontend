@@ -11,6 +11,7 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductComponent implements OnInit {
   products: Product[] = [];
   dataLoaded = false;
+  filterText="";
 
   constructor(private productService: ProductService,private activatedRoute:ActivatedRoute) {}
 
@@ -36,5 +37,8 @@ export class ProductComponent implements OnInit {
       this.products = response.data;
       this.dataLoaded = true;
     });
+  }
+  addToCart(product:Product){
+ console.log(product);
   }
 }
