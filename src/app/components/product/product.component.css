@@ -11,3 +11,6 @@
     border-color:yellowgreen;
     width:fit-content;
 }
+div.spinner-border.text-success span.visually-hidden {
+    color: yellowgreen;
+  }

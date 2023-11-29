@@ -9,8 +9,10 @@ import { CategoryComponent } from './components/category/category.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { VatAddedPipe } from './pipes/vat-added.pipe';
 import { FilterPipePipe } from './pipes/filter-pipe.pipe';
-
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SnackbarService } from './services/snackbar.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CartSummaryComponent } from './components/cart-summary/cart-summary.component';
 
 @NgModule({
   declarations: [
@@ -20,16 +22,19 @@ import { FilterPipePipe } from './pipes/filter-pipe.pipe';
     NaviComponent,
    VatAddedPipe,
    FilterPipePipe,
-   
-   
+   CartSummaryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule,
+    BrowserAnimationsModule,
+    
+    
   ],
-  providers: [],
+  providers: [SnackbarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

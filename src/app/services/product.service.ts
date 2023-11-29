@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product';
 import { ListResponseModel } from '../models/listResponseModel';
+import { SnackbarService } from './snackbar.service';
 
 @Injectable({
   providedIn: 'root'
