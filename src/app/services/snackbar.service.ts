@@ -14,4 +14,11 @@ export class SnackbarService {
       duration: 2000, // Snackbar'ın görüntülenme süresi (ms cinsinden)
     });
   }
+  error(message: string): void {
+    // Hata durumu için özel bir tasarım veya işlem ekleyebilirsiniz
+    this.snackBar.open(message, 'Hata', {
+      duration: 2000,
+      panelClass: ['error-snackbar'] // İsteğe bağlı: Özel bir CSS sınıfı ekleyebilirsiniz
+    });
+  }
 }
