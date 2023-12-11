@@ -34,9 +34,18 @@ productAddForm:FormGroup;
   let productModel =Object.assign({},this.productAddForm.value)
  this.productService.add(productModel).subscribe(data=>{
   console.log(data)
-  this.snackbarService.open("ürün eklendi başarılı")
-  
- })
+  this.snackbarService.open("ürün eklendi başarılı")},responseError=>
+  {
+    if(responseError.errors.length>0)
+    {
+      console.log(responseError.error.Errors)
+      for(let i=0; i<responseError.error.Errors;i++){
+        this.snackbarService.error(responseError.error.Errors[i].ErrorMessage)
+
+      }
+     
+     }
+    })
    }
     else{
       this.snackbarService.error("Formunuz eksik");
