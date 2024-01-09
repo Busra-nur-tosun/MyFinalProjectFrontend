@@ -42,7 +42,7 @@ Projede, n-Layered Architecture kullanılmıştır. Aşağıdaki ana katmanlar b
 4. Projeyi çalıştırın (`F5` veya `dotnet run`).
 
 *Frontend:*
-1. Terminal veya komut istemcisini açın ve `ECommerce.UI` klasörüne gidin.
+1. Terminal veya komut istemcisini açın 
 2. `npm install` komutu ile gerekli npm paketlerini yükleyin.
 3. `ng serve` komutu ile Angular uygulamasını başlatın.
 
